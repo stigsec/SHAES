@@ -10,9 +10,9 @@ def derive_key(password):
 def encrypt(input_file, password):
     key = derive_key(password)
     iv = get_random_bytes(16)
-    output_file = f"{input_file}.shase"
+    output_file = f"{input_file}.shaes"
     
-    if input_file.endswith(".shase"):
+    if input_file.endswith(".shaes"):
         print(f"The file {input_file} is already encrypted.")
         return
     
@@ -30,9 +30,9 @@ def encrypt(input_file, password):
 
 def decrypt(input_file, password):
     key = derive_key(password)
-    output_file = input_file.replace(".shase", "")
+    output_file = input_file.replace(".shaes", "")
     
-    if not input_file.endswith(".shase"):
+    if not input_file.endswith(".shaes"):
         print(f"The file {input_file} does not appear to be encrypted.")
         return
     
@@ -60,7 +60,7 @@ def decrypt(input_file, password):
 
 def usage():
     print("Usage:")
-    print("python shase.py {enc/dec} {input_file} {password}")
+    print("python shaes.py {enc/dec} {input_file} {password}")
 
 if __name__ == "__main__":
     if len(sys.argv) != 4:
