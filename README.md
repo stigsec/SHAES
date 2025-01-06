@@ -1,6 +1,6 @@
-# SHASE
+# SHAES
 
-**SHASE** is a lightweight Python script for encrypting and decrypting files using AES encryption in CBC mode.
+**SHAES** is a lightweight Python script for encrypting and decrypting files using AES encryption in CBC mode.
 
 ---
 
@@ -30,13 +30,13 @@ pip install pycryptodome
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/stigsec/SHASE.git
+   git clone https://github.com/stigsec/SHAES.git
    ```
 
 2. Navigate to the project directory:
 
    ```bash
-   cd SHASE
+   cd SHAES
    ```
 
 ---
@@ -46,7 +46,7 @@ pip install pycryptodome
 ### Syntax
 
 ```bash
-python shase.py {enc/dec} {input_file} {password}
+python shaes.py {enc/dec} {input_file} {password}
 ```
 
 ### Examples
@@ -54,7 +54,7 @@ python shase.py {enc/dec} {input_file} {password}
 #### Encrypt a file:
 
 ```bash
-python shase.py enc myfile.txt mypassword
+python shaes.py enc myfile.txt mypassword
 ```
 
 This will create an encrypted file named `myfile.txt.shase`.
@@ -62,7 +62,7 @@ This will create an encrypted file named `myfile.txt.shase`.
 #### Decrypt a file:
 
 ```bash
-python shase.py dec myfile.txt.shase mypassword
+python shaes.py dec myfile.txt.shase mypassword
 ```
 
 This will create a decrypted file named `myfile.txt`.
