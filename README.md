@@ -57,7 +57,7 @@ python shaes.py {enc/dec} {input_file} {password}
 python shaes.py enc myfile.txt mypassword
 ```
 
-This will create an encrypted file named `myfile.txt.shase`.
+This will create an encrypted file named `myfile.txt.shaes`.
 
 #### Decrypt a file:
 
