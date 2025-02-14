@@ -62,7 +62,7 @@ This will create an encrypted file named `myfile.txt.shaes`.
 #### Decrypt a file:
 
 ```bash
-python shaes.py dec myfile.txt.shase mypassword
+python shaes.py dec myfile.txt.shaes mypassword
 ```
 
 This will create a decrypted file named `myfile.txt`.
